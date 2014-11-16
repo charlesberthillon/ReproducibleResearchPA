@@ -83,8 +83,6 @@ f4
 ```
 ![plot of chunk unnamed-chunk-5-1](figure/unnamed-chunk-5-1.png) 
 
-![plot of chunk unnamed-chunk-5-1](figure/unnamed-chunk-5-1.png) 
-
 2.Calculate and report the mean and median total number of steps taken per day
 ```{r}
 #Summary triggered for general information purpose
@@ -108,11 +106,7 @@ f6<- ggplot(data=f5, aes(x=interval, y=steps)) + #graph de base
         scale_fill_brewer(palette="Set1") # http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
 f6
 ```
-<<<<<<< HEAD:PA1_template.md
 ![plot of chunk unnamed-chunk-7-1](figure/unnamed-chunk-7-1.png)
-=======
-![plot of chunk unnamed-chunk-7-1](figure/unnamed-chunk-7-1.png) 
->>>>>>> origin/master:PA1_template_.md
 
 2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -234,5 +228,5 @@ f21<-ggplot(f19,aes(interval,StepClean))+geom_line(aes(color="Weekday"))+
   geom_line(data=f20,aes(color="Weekend"))+
   labs(color="day")
 f21
-
+```
 ![plot of chunk unnamed-chunk-17-1](figure/unnamed-chunk-17-1.png)
